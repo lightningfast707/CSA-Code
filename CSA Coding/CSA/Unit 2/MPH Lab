@@ -1,0 +1,19 @@
+
+import java.util.Scanner;
+
+public class MPH{
+    public static void main (String[]args){
+        Scanner keyboard = new Scanner (System.in);
+        System.out.print("Enter the distance: : ");
+        int dist = keyboard.nextInt();
+        System.out.print("Enter the hours: : ");
+        int hrs = keyboard.nextInt();
+        System.out.print("Enter the minutes: :");
+        int mins = keyboard.nextInt();
+        
+        double time = (double) mins/60 + hrs;
+        double rate = dist/time;
+        System.out.println(String.format("%d miles in %d hour and %d minutes = %.0f MPH.",dist,hrs,mins,rate));
+    
+    }
+}

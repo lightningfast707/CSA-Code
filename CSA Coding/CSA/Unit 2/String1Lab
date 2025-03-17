@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class StringAvg{
+    public static void main(String[]args) {
+        Scanner keyboard = new Scanner (System.in);
+        System.out.print("Enter a string:");
+        String string1 = keyboard.next();
+        System.out.print("Enter a string:");
+        String string2 = keyboard.next();
+        Stringparamater(string1,string2);
+    }
+    public static void Stringparamater(String s1,String s2)
+    {
+        int len1 = s1.length();
+        int len2 = s2.length();
+        int add = len1 + len2;
+        double avg = (double) add/2;
+        System.out.println(avg);
+       
+    }
+
+}

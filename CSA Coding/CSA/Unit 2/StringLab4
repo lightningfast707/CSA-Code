@@ -1,0 +1,19 @@
+import java.util.Scanner;
+import java.util.*;
+
+public class Strings{
+    public static void main(String[]args){
+        Scanner keyboard = new Scanner (System.in);
+        System.out.print("Enter a string:");
+        String string = keyboard.next();
+        System.out.print("Enter an index:");
+        int index = keyboard.nextInt();
+        removal(string,index);
+    }
+    public static void removal(String s1,int i1){
+        StringBuilder str = new StringBuilder(s1);
+        str.deleteCharAt(i1);
+        System.out.println(str.toString());
+        
+    }
+}

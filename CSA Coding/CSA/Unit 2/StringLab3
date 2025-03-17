@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Words {
+    public static void main(String[] args) {
+        Scanner keyboard = new Scanner (System.in);
+        System.out.print("Enter a string:");
+        String a = keyboard.next();
+        System.out.print("Enter a string:");
+        String b = keyboard.next();
+        newWord(a,b);
+    }
+    public static void newWord(String s1, String s2){
+       String newphrase = s2.charAt(0) + s1.substring(1);
+       System.out.println(newphrase);
+    }
+}

@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class MiddleLetter{
+    public static void main(String[]args){
+        Scanner keyboard = new Scanner (System.in);
+        System.out.print("Enter a string:");
+        String string = keyboard.next();
+        int length = string.length();
+        int half = (int)length/2;
+        System.out.print(string.charAt(half));
+    }
+}

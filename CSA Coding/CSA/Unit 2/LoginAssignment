@@ -1,0 +1,55 @@
+//Khoi Le Login Assignment
+//Enter in your first name, middle name, and last name and your birthdate as the question prompts. The result
+// will output a username based on the following rules:
+//	1.  The first two characters are the last two characters of the last name.
+//	2.  The next three characters are the first three characters of the middle name.
+//	3.  The next two characters are the digits from the day (date) the person was born.
+//	4. The last three characters are the first three characters of the person’s first name in reverse order.
+//  5.All characters are lowercase.
+
+
+import java.util.Scanner;
+
+public class Login{
+    public static void main (String[]args){
+        Scanner keyboard = new Scanner (System.in);
+        System.out.print("Enter your first name:");
+        String firstname = keyboard.next();
+        System.out.print("Enter your middle name:");
+        String middlename = keyboard.next();
+        System.out.print("Enter your last name:");
+        String lastname = keyboard.next();
+        System.out.print("Enter your birthdate (MM):");
+        int birthdate = keyboard.nextInt();
+        System.out.print("Enter you birthdate (DD):");
+        int birthdate2 = keyboard.nextInt();
+        System.out.print("Enter your birthdate (YYYY):");
+        int birthdate3 = keyboard.nextInt();
+        createLogin(firstname, middlename, lastname, birthdate2);
+    }
+    
+    public static void createLogin(String s1, String s2, String s3, int mm){
+        String letters2 = s3.substring(s3.length()-2);
+        int birthdate = mm;
+        
+        char middles1 = s2.charAt(0);
+        String g = String.valueOf(middles1);
+        char middles2 = s2.charAt(1);
+        String g2 = String.valueOf(middles2);
+        char middles3 = s2.charAt(2);
+        String g3 = String.valueOf(middles3);
+        String middle = g + g2 + g3;
+        
+        char reverse1 = s1.charAt(2);
+        String t = String.valueOf(reverse1);
+        char reverse2 = s1.charAt(1);
+        String t2 = String.valueOf(reverse2);
+        char reverse3 = s1.charAt(0);
+        String t3 = String.valueOf(reverse3);
+        String firstreverse = t + t2 + t3;
+        
+        String login = letters2 + middle + birthdate + firstreverse;
+        System.out.println("Your login is " + login.toLowerCase());
+
+    }
+}
