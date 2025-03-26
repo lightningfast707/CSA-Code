@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main{
+public class PasswordChecking{
     public static void main (String [] args)
     {
         String y = "mchammergohammer";

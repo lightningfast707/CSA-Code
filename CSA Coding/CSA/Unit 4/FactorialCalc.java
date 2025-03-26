@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main
+public class FactorialCalc
 {
     public static void main(String [] args)
     {
@@ -8,11 +8,13 @@ public class Main
         System.out.print("Enter a number: ");
         int number = keyboard.nextInt();
         
-        int i = number;
-        while (i >= 1)
+        int i = 1;
+        int product = 1;
+        while (i <= number)
         {
-            System.out.println(i);
-            i--;
+            product *=i;
+            i++;
         }
+        System.out.println("The total is: " + product);
     }
 }

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.lang.Math;
 
-public class Main
+public class GuessingGame
 {
     public static void guess ()
     {

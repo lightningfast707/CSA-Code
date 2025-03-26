@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main {
+class MultiplicationTable {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner (System.in);
         System.out.print("Enter a start number:");

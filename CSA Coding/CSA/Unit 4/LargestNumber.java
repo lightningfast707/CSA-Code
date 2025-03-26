@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main
+public class LargestNumber
 {
     public static void main(String[] args)
     {
@@ -10,7 +10,7 @@ public class Main
         int maximum = 0;
         while (condition)
         {
-            int input = keyboard.nextInt();
+            int i = keyboard.nextInt();
             if (input > maximum)
             {
                 maximum = input;

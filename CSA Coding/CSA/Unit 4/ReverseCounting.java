@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main
+public class ReverseCounting
 {
     public static void main(String [] args)
     {
@@ -8,13 +8,11 @@ public class Main
         System.out.print("Enter a number: ");
         int number = keyboard.nextInt();
         
-        int i = 1;
-        int product = 1;
-        while (i <= number)
+        int i = number;
+        while (i >= 1)
         {
-            product *=i;
-            i++;
+            System.out.println(i);
+            i--;
         }
-        System.out.println("The total is: " + product);
     }
 }
