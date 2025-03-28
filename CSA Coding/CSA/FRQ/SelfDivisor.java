@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SelfDivisor 
 {
-    public static boolean isSelfDivisor(int number)
+    public boolean isSelfDivisor(int number)
     {
         String s = Integer.toString(number);
         int count = 0;
@@ -26,7 +26,7 @@ public class SelfDivisor
         }
         return false;
     }
-    public static int [] firstNumSelfDivisors(int start, int num)
+    public int [] firstNumSelfDivisors(int start, int num)
     {
         int i = 0;
         int [] arr = new int[num];

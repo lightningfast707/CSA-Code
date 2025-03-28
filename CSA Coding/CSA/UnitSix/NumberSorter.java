@@ -41,11 +41,11 @@ public class NumberSorter {
 
     public static void main(String [] args)
     {
-       NumberSorter n1 = new NumberSorter(567891);
-       NumberSorter n2 = new NumberSorter(901912468);
-       NumberSorter n3 = new NumberSorter(864213507);
-       NumberSorter n4 = new NumberSorter(898777);
-       NumberSorter n5 = new NumberSorter(234422);
+       new NumberSorter(567891);
+       new NumberSorter(901912468);
+       new NumberSorter(864213507);
+       new NumberSorter(898777);
+       new NumberSorter(234422);
     }
     
     
